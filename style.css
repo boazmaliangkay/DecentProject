@@ -1,0 +1,48 @@
+.content{
+	position: relative;
+	overflow: hidden;
+
+}
+
+
+.formulir{
+	float: left;
+}
+
+.formulircontact{
+	color: blue;
+	font-size: 24px;
+}
+.contact{
+	margin-left: 15%;
+}
+
+
+button{
+	background: blue;
+}
+button:hover{
+	color: black;
+}
+.headcontact{
+	color: blue;
+	font-size: 24px;
+}
+.infocontact{
+	float: right;
+	height: 10%;
+	width: 50%;
+}
+
+.infocontact:hover{
+	color: red;
+}
+
+.Media h1{
+	color: blue;
+}
+a img{
+	height: 20px;
+	width: 20px;
+
+}
