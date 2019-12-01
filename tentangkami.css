@@ -1,0 +1,388 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+.img img{
+  width: 100%;
+  overflow: hidden;
+}
+
+.menubar{
+  background-color: royalblue;
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  overflow: hidden;
+}
+
+.menubar ul{
+text-align: center;
+width: 100%;
+list-style: none;
+float: left;
+}
+
+.menubar ul li a{
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 25px;
+  color: steelblue;
+}
+
+a:hover:{
+  color: red;
+}
+
+.tentang h1{
+  text-align: center;
+  margin-left: 20px;
+  margin-right: 20px;
+  color: steelblue;
+}
+
+.tentang p{
+  text-align: center;
+  font-size: 15px;
+  margin-left: 50px;
+  margin-right: 50px;
+  color: grey;
+}
+
+.perusahaan {
+	border: 10px solid #efefef;
+	position: relative;
+	overflow: hidden;
+	background: #efefef;
+}
+
+.perusahaan {
+	margin:20px auto;
+	width: 768px;
+	height: 450px;
+}
+
+.isi-perusahaan img {
+	width: 768px;
+	height: 450px;
+	float: left;
+}
+
+.isi-perusahaan {
+	position: absolute;
+	width:3900px;
+
+	/*pengaturan durasi lama tampil gambar bisa di atur di bawah ini*/
+	animation-name:slider;
+	animation-duration:16s;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count:infinite;
+	-webkit-animation-name:slider;
+	-webkit-animation-duration:16s;
+	-webkit-animation-timing-function: ease-in-out;
+	-webkit-animation-iteration-count:infinite;
+	-moz-animation-name:slider;
+	-moz-animation-duration:16s;
+	-moz-animation-timing-function: ease-in-out;
+	-moz-animation-iteration-count:infinite;
+	-o-animation-name:slider;
+	-o-animation-duration:16s;
+	-o-animation-timing-function: ease-in-out;
+	-o-animation-iteration-count:infinite;
+}
+
+
+/*saat gambar di hover oleh cursor mouse maka berhenti slide*/
+.isi-perusahaan:hover {
+	-webkit-animation-play-state:paused;
+	-moz-animation-play-state:paused;
+	-o-animation-play-state:paused;
+	animation-play-state:paused; }
+}
+
+.isi-perusahaan img {
+	float: right;
+}
+
+.perusahaan:after {
+	font-size: 150px;
+	position: absolute;
+	z-index: 12;
+	color: rgba(255,255,255, 0);
+	left: 300px; top: 80px;
+	-webkit-transition: 1s all ease-in-out;
+	-moz-transition: 1s all ease-in-out;
+	transition: 1s all ease-in-out;
+}
+
+.perusahaan:hover:after {
+	color: rgba(255,255,255, 0.6);
+}
+
+
+
+@-moz-keyframes slider {
+	0% {
+		left: 0; opacity: 0;
+	}
+	2% {
+		opacity: 1;
+	}
+	20% {
+		left: 0; opacity: 1;
+	}
+	21% {
+		opacity: 0;
+	}
+	24% {
+		opacity: 0;
+	}
+	25% {
+		left: -768px; opacity: 1;
+	}
+	45% {
+		left: -768px; opacity: 1;
+	}
+	46% {
+		opacity: 0;
+	}
+	48% {
+		opacity: 0;
+	}
+	50% {
+		left: -1536px; opacity: 1;
+	}
+	70% {
+		left: -1536px; opacity: 1;
+	}
+	72% {
+		opacity: 0;
+	}
+	74% {
+		opacity: 0;
+	}
+	75% {
+		left: -2304px; opacity: 1;
+	}
+	95% {
+		left: -2304px; opacity: 1;
+	}
+	97% {
+		left: -2304px; opacity: 0;
+	}
+	100% {
+		left: 0; opacity: 0;
+	}
+}
+
+@-webkit-keyframes slider {
+	0% {
+		left: 0; opacity: 0;
+	}
+	2% {
+		opacity: 1;
+	}
+	20% {
+		left: 0; opacity: 1;
+	}
+	21% {
+		opacity: 0;
+	}
+	24% {
+		opacity: 0;
+	}
+	25% {
+		left: -768px; opacity: 1;
+	}
+	45% {
+		left: -768px; opacity: 1;
+	}
+	46% {
+		opacity: 0;
+	}
+	48% {
+		opacity: 0;
+	}
+	50% {
+		left: -1536px; opacity: 1;
+	}
+	70% {
+		left: -1536px; opacity: 1;
+	}
+	72% {
+		opacity: 0;
+	}
+	74% {
+		opacity: 0;
+	}
+	75% {
+		left: -2304px; opacity: 1;
+	}
+	95% {
+		left: -2304px; opacity: 1;
+	}
+	97% {
+		left: -2304px; opacity: 0;
+	}
+	100% {
+		left: 0; opacity: 0;
+	}
+}
+
+
+@keyframes slider {
+	0% {
+		left: 0; opacity: 0;
+	}
+	2% {
+		opacity: 1;
+	}
+	20% {
+		left: 0; opacity: 1;
+	}
+	21% {
+		opacity: 0;
+	}
+	24% {
+		opacity: 0;
+	}
+	25% {
+		left: -768px; opacity: 1;
+	}
+	45% {
+		left: -768px; opacity: 1;
+	}
+	46% {
+		opacity: 0;
+	}
+	48% {
+		opacity: 0;
+	}
+	50% {
+		left: -1536px; opacity: 1;
+	}
+	70% {
+		left: -1536px; opacity: 1;
+	}
+	72% {
+		opacity: 0;
+	}
+	74% {
+		opacity: 0;
+	}
+	75% {
+		left: -2304px; opacity: 1;
+	}
+	95% {
+		left: -2304px; opacity: 1;
+	}
+	97% {
+		left: -2304px; opacity: 0;
+	}
+
+	100% {
+		left: 0; opacity: 0;
+	}
+}
+
+.gambar{
+  float: left;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.gambar img{
+  width: 435px;
+  height: 200px;
+  margin-left: 10px;
+}
+
+.visi{
+  margin-left: 10px;
+  width: 100%;
+  margin-bottom: 50px;
+  overflow: hidden;
+}
+
+.visi .gambar1 img{
+  float: left;
+  width: 50%;
+}
+
+.visi .sidebar{
+  float: right;
+  width: 630px;
+  margin-top: 190px;
+}
+
+.visi .sidebar h1{
+  font-weight: bold;
+  color: steelblue;
+}
+
+.visi .sidebar p{
+  color: grey;
+  margin-bottom: 10px;
+}
+
+.visi ol{
+ margin-left: 50px;
+ color: grey;
+}
+
+.last{
+  width: 100%;
+  text-align: center;
+}
+
+.last h1{
+  color: steelblue;
+  margin-bottom: 10px;
+}
+
+.last p{
+  color: grey;
+  margin-bottom: 10px;
+}
+
+.last img{
+  margin-left: 25px;
+}
+
+.content{
+  width: 100%;
+  color: steelblue;
+  margin-top: 50px;
+}
+
+.content p{
+  color: grey;
+}
+
+.isi-content img{
+  width: 320px;
+  margin-left: 10px;
+  margin-bottom: 30px;
+}
+
+.content2{
+  color: steelblue;
+  width: 100%;
+}
+
+.content2 p{
+  color: grey;
+}
+
+.isi-content2 img{
+  width: 320px;
+  margin-left: 100px;
+  margin-bottom: 30px;
+}
+
+#awal {
+  text-align: center;
+  color: steelblue;
+  margin-top: 50px;
+}
