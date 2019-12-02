@@ -41,6 +41,15 @@ button:hover{
 .Media h1{
 	color: blue;
 }
+
+.maps img{
+	width: 100%;
+}
+
+.maps{
+	padding: 2%;
+}
+
 a img{
 	height: 20px;
 	width: 20px;
